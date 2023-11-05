@@ -15,6 +15,10 @@ header .navbar .navbar-nav a {
 }
 
 #theme-toggle {
+    height: 100%;
+    display: flex;
+    padding-top: 3px;
+    align-items: center;
     background-color: var(--background-color) !important;
     color: var(--text-color) !important;
 }
