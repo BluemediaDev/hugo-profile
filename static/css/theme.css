@@ -32,6 +32,12 @@ button#theme-toggle {
     margin: auto 4px;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
 body.dark #moon {
     vertical-align: middle;
     display: none;
