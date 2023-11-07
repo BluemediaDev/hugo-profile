@@ -1,10 +1,11 @@
 <span>
     {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
     <span class="px-1">
-        <a href="{{ .url }}"
-            {{ if not (hasPrefix .url "#") }} target="_blank" {{ end }}
-            class="btn social-icon"
-        >
+        {{ if .rel }}
+        <a href="{{ .url }}" rel={{ .rel }} target="_blank" class="btn social-icon">
+        {{ else }}
+        <a href="{{ .url }}" target="_blank" class="btn social-icon">
+        {{ end }}
             <i class="{{ .icon }}"></i>
         </a>
     </span>
@@ -12,10 +13,11 @@
 
     {{ range .Site.Params.hero.socialLinks.customIcons }}
     <span class="px-1">
-        <a href="{{ .url }}"
-            {{ if not (hasPrefix .url "#") }} target="_blank" {{ end }}
-            class="btn social-icon"
-        >
+        {{ if .rel }}
+        <a href="{{ .url }}" rel={{ .rel }} target="_blank" class="btn social-icon">
+        {{ else }}
+        <a href="{{ .url }}" target="_blank" class="btn social-icon">
+        {{ end }}
             <img src="{{ .icon }}">
         </a>
     </span>
