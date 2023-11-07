@@ -12,6 +12,7 @@
     --text-secondary-color: var(--text-secondary-color-dark) !important;
     --primary-color: var(--primary-color-dark);
     --secondary-color: var(--secondary-color-dark);
+    --link-color: var(--link-color-dark)
 }
 
 .text-secondary {
@@ -54,4 +55,8 @@ body *::selection {
 
 .card-title {
     font-weight: 700;
+}
+
+a {
+    color: var(--link-color)
 }
