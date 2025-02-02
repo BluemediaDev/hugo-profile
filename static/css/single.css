@@ -52,7 +52,7 @@
 }
 
 #single .page-content h1, #single .page-content h2, #single .page-content h3, #single .page-content h4, #single .page-content h5, #single .page-content h6 {
-    color: var(--text-link-color) !important;
+    color: var(---text-secondary-color) !important;
     margin-bottom: 0.7em;
     opacity: 0.9;
 }
@@ -188,7 +188,7 @@
     border-radius: 10px;
     background-color: var(--background-color);
     text-decoration: none;
-    color: var(--text-link-color) !important;
+    color: var(--text-secondary-color) !important;
 }
 
 #single aside.tags ul.tags-ul li {

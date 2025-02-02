@@ -44,6 +44,10 @@
     border-bottom-right-radius: 1rem;
 }
 
+#projects .card .card-footer a {
+    color: var(--text-secondary-color) !important;
+}
+
 #projects .card:hover .card-img-top {
     transform: scale(1.2);
     transition: all 0.3s ease-out;
